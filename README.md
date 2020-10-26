@@ -11,4 +11,4 @@
 - [ ] Create function that clears out the text area after typing in it
 - [ ] use better CSS or framework
 - [ ] add functionality to handle numbers and special characters
-- [ ] add realtime functionality
+- [x] add realtime functionality
