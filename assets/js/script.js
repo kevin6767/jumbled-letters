@@ -1,12 +1,11 @@
-var startButton = document.querySelector('#sub-btn');
-
+var listener = document.getElementById('text-area1');
 var chance;
+
 
 function setArr(params) {
     var bstring = document.getElementById('text-area1').value; 
     var astring = document.getElementById('text-area2');
-    var string = [];
-
+    var string = "";
 
     bstringFixed = bstring.split("")
     for (let index = 0; index < 5; index++) {
@@ -19,10 +18,10 @@ function setArr(params) {
         chance = Math.floor(Math.random()*2)
         //console.log(chance)
         if (chance === 0) {
-            string.push(bstringFixed[index].toUpperCase());
+            string = string + bstringFixed[index].toUpperCase();
             
         }else{
-            string.push(bstringFixed[index]);
+            string = string + bstringFixed[index];
         }
 
 
@@ -31,7 +30,7 @@ function setArr(params) {
     
     //console.log(string)
 
-    astring.value = string.join("")
+    astring.value = string;
     
     
 }
@@ -39,4 +38,4 @@ function setArr(params) {
 
 
 
-startButton.addEventListener('click', setArr);
+listener.addEventListener('keyup', setArr);
