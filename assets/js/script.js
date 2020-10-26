@@ -7,11 +7,11 @@ function setArr(params) {
     var astring = document.getElementById('text-area2');
     var string = "";
 
-    bstringFixed = bstring.split("")
-    for (let index = 0; index < 5; index++) {
+    var bstringFixed = bstring.split("")
+    /*for (let index = 0; index < 5; index++) {
         bstringFixed.shift()
         
-    }
+    }*/
 
     
     for (let index = 0; index < bstringFixed.length; index++) {
