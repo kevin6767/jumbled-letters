@@ -8,10 +8,6 @@ function setArr(params) {
     var string = "";
 
     var bstringFixed = bstring.split("")
-    /*for (let index = 0; index < 5; index++) {
-        bstringFixed.shift()
-        
-    }*/
 
     
     for (let index = 0; index < bstringFixed.length; index++) {
